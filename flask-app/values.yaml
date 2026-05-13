@@ -1,7 +1,7 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
-  repository: asia-south1-docker.pkg.dev/PROJECT/flask-repo/flask-app
+  repository: nginx
   tag: latest
 
 service:
@@ -9,4 +9,4 @@ service:
   port: 80
 
 secret:
-  dbPassword: ""
+  dbPassword: defaultpass
