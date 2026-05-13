@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: asia-south1-docker.pkg.dev/PROJECT/flask-repo/flask-app
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
+
+secret:
+  dbPassword: ""
